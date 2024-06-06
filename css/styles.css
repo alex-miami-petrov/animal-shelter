@@ -227,6 +227,23 @@ button {
   .menu-link {
   }
 
+  .current {
+    position: relative;
+
+    color: #4a86ff;
+  }
+
+  .current::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: -6px;
+
+    background-color: blue;
+    height: 0.1px;
+    width: 100px;
+  }
+
   .help-btn-link {
     margin-right: 0;
   }

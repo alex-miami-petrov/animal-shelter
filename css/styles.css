@@ -1,8 +1,9 @@
 body {
-  font-family: ;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
-  background-color: ;
-  color: ;
+  font-weight: 500;
+  background-color: #fff;
+  color: #404040;
 }
 
 h1,
@@ -48,10 +49,11 @@ ul {
 }
 
 .title {
-  font-weight: ;
-  font-size: ;
-  line-height: ;
-  color: ;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.3;
+  text-align: center;
+  color: #202053;
 }
 
 button {
@@ -72,3 +74,25 @@ button {
 /*  */
 
 /*  */
+
+/* TABLET */
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0 auto;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+  }
+}

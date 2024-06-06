@@ -62,6 +62,33 @@ button {
 
 /* HEADER */
 
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-mob {
+}
+.help-btn-link {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+  padding: 16px 32px;
+  width: 160px;
+  height: 60px;
+  box-shadow: 0 0 40px 0 rgba(239, 57, 89, 0.4);
+  background-color: #ef3959;
+}
+.burger-icon {
+}
+
 /* HERO */
 
 .hero {

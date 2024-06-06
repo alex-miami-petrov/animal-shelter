@@ -28,11 +28,13 @@ img {
   height: auto;
 }
 
-.container {
-  width: ;
-  padding-left: ;
-  padding-right: ;
-  margin: 0 auto;
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+  }
 }
 
 a {

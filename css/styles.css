@@ -85,7 +85,18 @@ button {
   height: 60px;
   box-shadow: 0 0 40px 0 rgba(239, 57, 89, 0.4);
   background-color: #ef3959;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.help-btn-link:hover,
+.help-btn-link:focus {
+  color: #ef3959;
+  border: 2px solid #ef3959;
+  background-color: #fff;
+}
+
 .burger-icon {
 }
 

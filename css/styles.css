@@ -231,13 +231,17 @@ button {
     padding-bottom: 92px;
   }
 
+  .hero-container {
+  }
+
   .hero-wrap {
     display: flex;
   }
 
   .hero-text-wrap {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
+    flex-shrink: 0; */
   }
 
   .hero-title {
@@ -245,7 +249,7 @@ button {
     font-size: 56px;
     line-height: 1.3;
     color: #202053;
-    max-width: 576px;
+    width: 576px;
     margin-bottom: 40px;
   }
 
@@ -258,9 +262,8 @@ button {
     font-weight: 500;
     font-size: 24px;
     color: #404040;
-    max-width: 412px;
+    width: 412px;
     line-height: 1.5;
-    margin-bottom: 80px;
   }
 
   .hero-btn-link-tab {
@@ -282,17 +285,32 @@ button {
     display: none;
   }
 
+  .hero-btn-link-tab {
+    width: 328px;
+    height: 102px;
+    margin-top: 80px;
+  }
+
   .hero-decor {
-    margin-top: 52px;
+    position: relative;
+    right: 18%;
+    top: 5%;
     width: 500px;
     height: 515px;
+    flex-shrink: 0;
+    object-fit: contain;
+    max-width: unset;
   }
 
   .hero-img {
-    position: absolute;
-    transform: translate(10%, -96%);
+    transform: translate(-12%, -92%);
     width: 438px;
+    flex-shrink: 0;
   }
+
+  /* .hero-container {
+    padding: 0;
+  } */
 }
 
 /* DESKTOP */

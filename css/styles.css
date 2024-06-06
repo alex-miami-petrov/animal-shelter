@@ -121,8 +121,46 @@ button {
 /* HERO */
 
 .hero {
-  padding-top: ;
-  padding-bottom: ;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #202053;
+  margin-bottom: 24px;
+}
+.hero-subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 48px;
+  max-width: 327px;
+  line-height: 1.5;
+}
+.hero-decor {
+  position: relative;
+}
+.hero-img {
+  position: absolute;
+  transform: translate(10%, -96%);
+  width: 286px;
+}
+.hero-btn-link {
+  display: block;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.6;
+  text-align: center;
+  color: #fff;
+  border-radius: 25px 25px 25px 0;
+  padding: 16px 32px;
+  width: 327px;
+  height: 80px;
+  box-shadow: 0 0 40px 0 rgba(239, 57, 89, 0.4);
+  background-color: #ef3959;
+  margin-top: 38px;
 }
 
 /*  */

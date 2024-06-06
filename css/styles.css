@@ -74,6 +74,11 @@ button {
 }
 .logo-mob {
 }
+
+.logo-tab {
+  display: none;
+}
+
 .help-btn-link {
   font-weight: 400;
   font-size: 20px;
@@ -121,6 +126,14 @@ button {
     padding-left: 32px;
     padding-right: 32px;
     margin: 0 auto;
+  }
+
+  .logo-tab {
+    display: unset;
+  }
+
+  .logo-mob {
+    display: none;
   }
 }
 

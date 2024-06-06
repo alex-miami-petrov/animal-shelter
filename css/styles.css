@@ -79,6 +79,14 @@ button {
   display: none;
 }
 
+.menu-list {
+  display: none;
+}
+
+.lang-btn {
+  display: none;
+}
+
 .help-btn-link {
   font-weight: 400;
   font-size: 20px;
@@ -100,6 +108,11 @@ button {
   color: #ef3959;
   border: 2px solid #ef3959;
   background-color: #fff;
+}
+
+.burger-btn {
+  border: none;
+  background-color: transparent;
 }
 
 .burger-icon {
@@ -128,12 +141,40 @@ button {
     margin: 0 auto;
   }
 
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .nav {
+    justify-content: unset;
+    /* gap: 24px; */
+  }
+
   .logo-tab {
     display: unset;
+    margin-right: auto;
   }
 
   .logo-mob {
     display: none;
+  }
+
+  .menu-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .lang-btn {
+    display: unset;
+    background-color: transparent;
+    border: none;
+    margin-right: 18px;
+    padding: 0;
+  }
+
+  .help-btn-link {
+    margin-right: 32px;
   }
 }
 
@@ -145,5 +186,48 @@ button {
     padding-left: 40px;
     padding-right: 40px;
     margin: 0 auto;
+  }
+
+  .header {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .head-container {
+    padding-right: 48px;
+  }
+
+  .burger-btn {
+    display: none;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+
+  .logo-tab {
+    margin-right: 0;
+  }
+
+  .menu-list {
+    display: flex;
+    gap: 20px;
+  }
+  .menu-item {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #202053;
+  }
+
+  .menu-item:first-child {
+    color: #4a86ff;
+  }
+
+  .menu-link {
+  }
+
+  .help-btn-link {
+    margin-right: 0;
   }
 }

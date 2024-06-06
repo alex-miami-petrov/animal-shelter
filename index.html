@@ -25,7 +25,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container head-container">
         <nav class="nav">
           <img
             src="./img/logo-mob.png"
@@ -43,16 +43,33 @@
             height="62"
           />
 
-          <button id="language-toggle" class="lang-btn">
-            ua<svg class="lang-icon" width="12" height="8">
-              <use href="./img/icons.svg#icon-lang"></use>
+          <ul class="menu-list">
+            <li class="menu-item"><a href="" class="menu-link">Домашня</a></li>
+            <li class="menu-item"><a href="" class="menu-link"></a>Про нас</li>
+            <li class="menu-item">
+              <a href="" class="menu-link"></a>Вірні друзі
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-link">Наші умови</a>
+            </li>
+            <li class="menu-item"><a href="" class="menu-link">Локація</a></li>
+            <li class="menu-item"><a href="" class="menu-link"></a>Контакти</li>
+          </ul>
+          <div class="menu-wrap">
+            <button id="language-toggle" class="lang-btn">
+              <svg class="lang-icon" width="83" height="62">
+                <use href="./img/icons.svg#icon-lang-icon"></use>
+              </svg>
+            </button>
+
+            <a href="" class="help-btn-link">Допомогти</a>
+          </div>
+
+          <button type="button" class="burger-btn">
+            <svg class="burger-icon" width="30" height="28">
+              <use href="./img/icons.svg#icon-burger"></use>
             </svg>
           </button>
-
-          <a href="" class="help-btn-link">Допомогти</a>
-          <svg class="burger-icon" width="30" height="28">
-            <use href="./img/icons.svg#icon-burger"></use>
-          </svg>
         </nav>
       </div>
     </header>

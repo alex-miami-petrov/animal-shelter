@@ -289,6 +289,7 @@ button {
     width: 328px;
     height: 102px;
     margin-top: 80px;
+    padding: 30px 92px;
   }
 
   .hero-decor {
@@ -368,6 +369,30 @@ button {
   }
 
   .help-btn-link {
-    margin-right: 0;
+    margin-right: 28px;
+  }
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 120px;
+  }
+
+  .hero-title {
+    margin-top: 77px;
+  }
+
+  .hero-decor {
+    position: relative;
+    right: -24%;
+    top: 8%;
+    width: 615px;
+    height: 634px;
+    flex-shrink: 0;
+    object-fit: contain;
+    max-width: unset;
+  }
+
+  .hero-img {
+    transform: translate(35%, -88%);
+    width: 538px;
   }
 }

@@ -264,11 +264,17 @@ button {
 }
 
 .friend-item {
+  /* position: relative; */
+}
+
+.friend-item-wrap {
   position: relative;
 }
+
 .friend-item-wrap-mob {
-  position: absolute;
+  position: relative;
   left: 50%;
+  overflow-x: hidden;
 }
 .friend-img {
 }

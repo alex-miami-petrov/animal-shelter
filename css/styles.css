@@ -248,13 +248,21 @@ button {
 .friend-list {
   padding-left: 30px;
   display: flex;
-  width: 100%;
+  gap: 20px;
 }
+.mob {
+  display: none;
+}
+
 .friend-item {
 }
 .friend-item-wrap {
 }
 .friend-img {
+}
+.friend-img-mob {
+  position: relative;
+  left: 50%;
 }
 .friend-name {
 }

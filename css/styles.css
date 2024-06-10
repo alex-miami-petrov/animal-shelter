@@ -272,8 +272,7 @@ button {
 }
 .friend-img {
 }
-.friend-img-mob {
-}
+
 .friend-content-wrap {
   display: flex;
   justify-content: space-between;
@@ -682,5 +681,30 @@ button {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.5;
+  }
+
+  .friend {
+    padding-top: 120px;
+    padding-bottom: 64px;
+  }
+
+  .friend-title-tab {
+    max-width: unset;
+  }
+
+  .desk {
+    display: none;
+  }
+
+  .friend-list {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+  }
+
+  .friend-img {
+    width: 370px;
+    height: 350px;
   }
 }

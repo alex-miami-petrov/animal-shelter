@@ -551,13 +551,22 @@ button {
 
   .friend-item {
     position: unset;
-    width: calc((100% - 22.7px) / 6);
+    /* width: calc((100% - 22.7px) / 6); */
   }
   .friend-item-wrap-mob {
     position: unset;
   }
 
   .friend-list {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+  }
+
+  .friend-more-btn {
+    margin: auto;
+    display: block;
   }
 }
 

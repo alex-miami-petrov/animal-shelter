@@ -234,9 +234,12 @@ button {
   padding-right: 0;
 }
 
-.title {
+.friend-title {
   margin-bottom: 24px;
   max-width: 375px;
+}
+.friend-title-tab {
+  display: none;
 }
 .friend-subtitle {
   font-weight: 500;
@@ -245,34 +248,71 @@ button {
   color: #404040;
   margin-bottom: 24px;
 }
+
+.friend-subtitle-tab {
+  display: none;
+}
+
 .friend-list {
   padding-left: 30px;
   display: flex;
   gap: 20px;
+  margin-bottom: 24px;
 }
 .mob {
   display: none;
 }
 
 .friend-item {
+  position: relative;
 }
-.friend-item-wrap {
+.friend-item-wrap-mob {
+  position: absolute;
+  left: 50%;
 }
 .friend-img {
 }
 .friend-img-mob {
-  position: relative;
-  left: 50%;
+}
+.friend-content-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.friend-text-wrap {
+  display: flex;
+  flex-direction: column;
 }
 .friend-name {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.6;
+  color: #202053;
+  margin-bottom: 8px;
 }
 .friend-age {
+  font-weight: 500;
+  font-size: 16px;
+  color: #404040;
 }
 .friend-arrow-btn {
+  border: none;
+  background-color: transparent;
 }
 .arrow-icon {
 }
 .friend-more-btn {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.6;
+  text-align: center;
+  color: #ef3959;
+  border-radius: 25px 25px 25px 0;
+  padding: 14px 29px;
+  max-width: 327px;
+  height: 80px;
+  margin-left: 24px;
+
+  background-color: transparent;
 }
 
 /*  */
@@ -450,7 +490,7 @@ button {
     font-size: 24px;
   }
 
-  .title {
+  .title-mob {
     display: none;
   }
 
@@ -470,6 +510,54 @@ button {
     padding: 21px 82px;
     width: 442px;
     height: 102px;
+  }
+
+  .friend {
+    padding-top: 80px;
+  }
+
+  .friend-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .friend-title {
+    display: none;
+  }
+
+  .friend-title-tab {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    max-width: 944px;
+  }
+
+  .friend-subtitle {
+    display: none;
+  }
+
+  .friend-subtitle-tab {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 64px;
+    color: #404040;
+  }
+
+  .mob {
+    display: unset;
+  }
+
+  .friend-item {
+    position: unset;
+    width: calc((100% - 22.7px) / 6);
+  }
+  .friend-item-wrap-mob {
+    position: unset;
+  }
+
+  .friend-list {
   }
 }
 

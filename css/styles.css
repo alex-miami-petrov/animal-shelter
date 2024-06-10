@@ -291,7 +291,6 @@ button {
 .friend-age {
   font-weight: 500;
   font-size: 16px;
-  color: #404040;
 }
 .friend-arrow-btn {
   border: none;
@@ -701,10 +700,29 @@ button {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 64px;
+    column-gap: 125px;
+    row-gap: 80px;
   }
 
   .friend-img {
     width: 370px;
     height: 350px;
+    margin-bottom: 12px;
+  }
+
+  .friend-name {
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .friend-age {
+    font-weight: 500;
+    font-size: 24px;
+    color: #404040;
+  }
+
+  .arrow-icon {
+    width: 76px;
+    height: 76px;
   }
 }

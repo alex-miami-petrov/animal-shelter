@@ -274,7 +274,7 @@ button {
 .friend-item-wrap-mob {
   position: relative;
   left: 50%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .friend-img {
 }

@@ -283,6 +283,8 @@ button {
 .friend-content-wrap {
   display: flex;
   margin-top: 14px;
+  justify-content: space-between;
+  max-width: 223px;
 }
 .friend-text-wrap {
   display: flex;
@@ -302,7 +304,7 @@ button {
 .friend-arrow-btn {
   border: none;
   background-color: transparent;
-  margin-left: 61px;
+  /* margin-left: 61px; */
 }
 .arrow-icon {
 }

@@ -282,6 +282,7 @@ button {
 
 .friend-content-wrap {
   display: flex;
+  margin-top: 14px;
 }
 .friend-text-wrap {
   display: flex;
@@ -572,6 +573,7 @@ button {
 
   .friend-content-wrap {
     justify-content: space-between;
+    margin-top: 0;
   }
 
   .friend-item-wrap-mob {

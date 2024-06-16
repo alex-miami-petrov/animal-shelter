@@ -258,6 +258,7 @@ button {
   display: flex;
   gap: 20px;
   margin-bottom: 24px;
+  display: none;
 }
 .mob {
   display: none;
@@ -281,7 +282,6 @@ button {
 
 .friend-content-wrap {
   display: flex;
-  justify-content: space-between;
 }
 .friend-text-wrap {
   display: flex;
@@ -301,6 +301,7 @@ button {
 .friend-arrow-btn {
   border: none;
   background-color: transparent;
+  margin-left: 61px;
 }
 .arrow-icon {
 }
@@ -317,7 +318,18 @@ button {
   margin-left: 24px;
 
   background-color: transparent;
+  margin-top: 38px;
 }
+
+.glide {
+  margin-left: 32px;
+  overflow: hidden; /* Приховує елементи, що виходять за межі контейнера */
+}
+
+/* .glide__slide img {
+  width: 223px; 
+  height: 260px; 
+} */
 
 /*  */
 
@@ -557,6 +569,11 @@ button {
     position: unset;
     /* width: calc((100% - 22.7px) / 6); */
   }
+
+  .friend-content-wrap {
+    justify-content: space-between;
+  }
+
   .friend-item-wrap-mob {
     position: unset;
   }
@@ -568,9 +585,17 @@ button {
     margin-bottom: 64px;
   }
 
+  .friend-arrow-btn {
+    margin-left: 0;
+  }
+
   .friend-more-btn {
     margin: auto;
     display: block;
+  }
+
+  .glide {
+    display: none;
   }
 }
 

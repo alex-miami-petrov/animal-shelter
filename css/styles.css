@@ -467,6 +467,10 @@ iframe {
 .term-img {
 }
 
+.cont-sub-tab {
+  display: none;
+}
+
 /* TABLET */
 
 @media screen and (min-width: 1024px) {
@@ -788,6 +792,57 @@ iframe {
   iframe {
     width: 1024px;
     height: 500px;
+  }
+
+  .contacts {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  .cont-title {
+    font-weight: 800;
+    font-size: 56px;
+    margin-bottom: 64px;
+  }
+
+  .cont-subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .cont-sub-tab {
+    display: unset;
+  }
+
+  .street-title {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .street-text {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .adress-text {
+    font-size: 24px;
+  }
+
+  .adress-link {
+    font-size: 24px;
+  }
+
+  .cont-tab-wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 950px;
+    align-items: center;
+  }
+
+  .term-img {
+    width: 468px;
+    height: 280px;
   }
 }
 

@@ -464,7 +464,7 @@ iframe {
   margin-bottom: 24px;
 }
 
-.term-img {
+.cont-img {
 }
 
 .cont-sub-tab {
@@ -836,14 +836,18 @@ iframe {
   .cont-tab-wrap {
     display: flex;
     justify-content: space-between;
-    max-width: 950px;
+
     align-items: center;
   }
 
-  .term-img {
+  .cont-img {
     width: 468px;
     height: 280px;
   }
+
+  /* .cont-desk-container {
+    max-width: 950px;
+  } */
 }
 
 /* DESKTOP */
@@ -1028,5 +1032,33 @@ iframe {
   iframe {
     width: 1130px;
     height: 500px;
+  }
+
+  /* .cont-desk-container {
+    max-width: 1420px;
+  } */
+
+  .cont-img {
+    width: 639px;
+    height: 409px;
+  }
+
+  .cont-subtitle {
+    font-size: 30px;
+  }
+  .street-title {
+    font-size: 30px;
+  }
+
+  .street-text {
+    font-size: 30px;
+  }
+
+  .adress-text {
+    font-size: 30px;
+  }
+
+  .adress-link {
+    font-size: 30px;
   }
 }

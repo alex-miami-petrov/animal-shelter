@@ -399,7 +399,6 @@ iframe {
 /* CONTACTS */
 
 .contacts {
-  padding-top: 40px;
   padding-bottom: 60px;
 }
 
@@ -795,7 +794,6 @@ iframe {
   }
 
   .contacts {
-    padding-top: 80px;
     padding-bottom: 100px;
   }
 
@@ -992,6 +990,10 @@ iframe {
     margin-bottom: 12px;
   }
 
+  .friend-content-wrap {
+    max-width: unset;
+  }
+
   .friend-name {
     font-weight: 700;
     font-size: 40px;
@@ -1037,6 +1039,10 @@ iframe {
   /* .cont-desk-container {
     max-width: 1420px;
   } */
+
+  .contacts {
+    padding-bottom: 120px;
+  }
 
   .cont-img {
     width: 639px;

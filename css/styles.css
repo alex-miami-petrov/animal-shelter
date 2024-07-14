@@ -526,6 +526,42 @@ iframe {
   position: relative;
 }
 
+/* FOOTER */
+
+.footer {
+}
+
+.foot-logo {
+}
+.foot-title {
+}
+.foot-soc-list {
+}
+.foot-soc-item {
+}
+.foot-icon {
+}
+.foot-nav {
+}
+.foot-menu-list-1 {
+}
+.foot-menu-item {
+}
+.foot-menu-link {
+}
+.foot-menu-list-2 {
+}
+.foot-menu-list-3 {
+}
+.foot-subtitle {
+}
+.foot-text {
+}
+.foot-span {
+}
+.foot-reserv {
+}
+
 /* TABLET */
 
 @media screen and (min-width: 1024px) {

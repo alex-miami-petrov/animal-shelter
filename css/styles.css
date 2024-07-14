@@ -532,7 +532,8 @@ iframe {
   padding-bottom: 25px;
 }
 .foot-container {
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .foot-wrap {
   padding-left: 16px;
@@ -1018,7 +1019,14 @@ iframe {
     width: 442px;
     height: 102px;
   }
-
+  .foot-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .foot-wrap {
+    padding-left: 32px;
+    padding-right: 46px;
+  }
   .foot-menu-list-3 {
     display: unset;
   }

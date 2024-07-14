@@ -1320,14 +1320,17 @@ iframe {
   .adress-link {
     font-size: 30px;
   }
-
+  .help-container {
+    padding-left: 156px;
+    padding-right: 156px;
+  }
   .help-border {
     margin: 0 auto;
   }
   .foot-container {
     padding-left: 0;
     padding-right: 0;
-    max-width: 1240px;
+    /* max-width: 1240px; */
   }
   .foot-wrap-desk {
     display: flex;
@@ -1347,6 +1350,7 @@ iframe {
   }
   .foot-logo {
     margin-left: unset;
+    margin-right: 132px;
   }
   .foot-title {
     font-weight: 400;
@@ -1354,14 +1358,19 @@ iframe {
   }
   .foot-wrap-content-desk {
     display: flex;
-    border-top: 1px solid #202053;
+    /* border-top: 1px solid #202053; */
     padding: 40px 0px;
 
-    width: 100%;
+    gap: 55px;
     justify-content: space-between;
   }
   .foot-help-wrap {
     display: unset;
-    margin-right: 40px;
+    margin-right: 106px;
+    margin-left: 75px;
+  }
+  .foot-border {
+    border-top: 1px solid #202053;
+    width: 100%;
   }
 }

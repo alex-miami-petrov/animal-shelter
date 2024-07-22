@@ -117,6 +117,9 @@ button {
 
 .burger-icon {
 }
+.dropdown {
+  display: none;
+}
 
 /* HERO */
 
@@ -785,6 +788,41 @@ iframe {
 
   .help-btn-link {
     margin-right: 32px;
+  }
+  .dropdown {
+    display: unset;
+    margin-right: 24px;
+  }
+  .btn {
+    border: none;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 20px;
+    color: #202053;
+    outline: none !important; /* Прибираємо рамку фокусу */
+    box-shadow: none !important; /* Прибираємо тінь */
+  }
+  .btn:hover,
+  .btn:active,
+  .btn:focus {
+    border: none;
+    background-color: transparent;
+    color: #202053;
+    box-shadow: none;
+    outline: none;
+  }
+  .dropdown-menu {
+    min-width: 60px; /* Мінімальна ширина меню */
+    max-width: 60px; /* Максимальна ширина меню */
+
+    font-weight: 400;
+    font-size: 20px;
+    color: #202053;
+    outline: none !important; /* Прибираємо рамку фокусу */
+    box-shadow: none !important; /* Прибираємо тінь */
+  }
+  .dropdown-toggle {
+    width: 60px;
   }
 
   .hero {
@@ -1508,5 +1546,6 @@ iframe {
   }
   .language-menu {
     right: 20.1%;
+    transform: translate(50%, -20%);
   }
 }

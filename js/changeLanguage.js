@@ -1,51 +1,97 @@
-$(document).ready(function () {
-  // Початкове приховання меню
-  $("#language-menu").hide();
+// $(document).ready(function () {
 
-  // Клік на кнопку language-toggle
-  $("#language-toggle").click(function (e) {
-    e.stopPropagation(); // Зупиняємо подальше випливання події
-    $("#language-menu").show(); // Показуємо меню language-menu
-  });
+//   $("#language-menu").hide();
 
-  // Клік на будь-який елемент в межах language-menu
-  $("#language-menu").click(function (e) {
-    e.stopPropagation(); // Зупиняємо подальше випливання події
-  });
+//   $("#language-toggle").click(function (e) {
+//     e.stopPropagation();
+//     $("#language-menu").show();
+//   });
 
-  // Клік поза language-menu ховає його
-  $(document).click(function () {
-    $("#language-menu").hide();
-  });
+//   $("#language-menu").click(function (e) {
+//     e.stopPropagation();
+//   });
 
-  // Обробка кліку на посилання в меню
-  $("#language-menu a").click(function (e) {
-    e.preventDefault();
-    var lang = $(this).attr("data-lang");
-    changeLanguage(lang);
-    $("#language-menu").hide(); // Ховаємо меню після вибору мови
-  });
+//   $(document).click(function () {
+//     $("#language-menu").hide();
+//   });
 
-  function changeLanguage(lang) {
-    // Оновлюємо текст кнопки або іншого елемента з вибором мови
-    $("#language-toggle").text(lang.toUpperCase());
+//   $("#language-menu a").click(function (e) {
+//     e.preventDefault();
+//     var lang = $(this).attr("data-lang");
+//     changeLanguage(lang);
+//     $("#language-menu").hide();
+//   });
 
-    // Тут ви можете додати свою логіку для зміни контенту на сторінці на обрану мову
-    // Наприклад, якщо у вас є AJAX-запит для отримання вмісту на обраній мові:
-    $.ajax({
-      url: "your-backend-endpoint",
-      method: "GET",
-      data: { lang: lang },
-      success: function (response) {
-        console.log("Контент на мові " + lang + ":", response);
-        // Тут ви можете оновити DOM з отриманим відповідним контентом
-      },
-      error: function (err) {
-        console.error(
-          "Помилка при отриманні контенту на мові " + lang + ":",
-          err
-        );
-      },
+//   const dropdownElementList = document.querySelectorAll(".dropdown-toggle");
+//   const dropdownList = [...dropdownElementList].map(
+//     (dropdownToggleEl) => new bootstrap.Dropdown(dropdownToggleEl)
+//   );
+
+//   function changeLanguage(lang) {
+
+//     $("#language-toggle").text(lang.toUpperCase());
+
+//     $.ajax({
+//       url: "your-backend-endpoint",
+//       method: "GET",
+//       data: { lang: lang },
+//       success: function (response) {
+//         console.log("Контент на мові " + lang + ":", response);
+
+//       },
+//       error: function (err) {
+//         console.error(
+//           "Помилка при отриманні контенту на мові " + lang + ":",
+//           err
+//         );
+//       },
+//     });
+//   }
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const dropdownToggle = document.getElementById("dropdownMenuButton");
+//   const menuItems = document.querySelectorAll(".dropdown-item");
+
+//   menuItems.forEach((item) => {
+//     item.addEventListener("click", function (e) {
+//       e.preventDefault();
+//       const lang = this.getAttribute("data-lang");
+//       const currentLanguage = dropdownToggle.textContent.trim();
+
+//       if (
+//         (lang === "en" && currentLanguage !== "EN") ||
+//         (lang === "ua" && currentLanguage !== "UA")
+//       ) {
+//         dropdownToggle.textContent = lang.toUpperCase();
+//       }
+//     });
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownToggle = document.getElementById("dropdownMenuButton");
+  const menuItems = document.querySelectorAll(".dropdown-item");
+
+  menuItems.forEach((item) => {
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
+      const lang = this.getAttribute("data-lang");
+
+      // Отримуємо поточну мову з основної кнопки
+      const currentLanguage = dropdownToggle.textContent.trim();
+
+      // Змінюємо текст основної кнопки на вибрану мову
+      dropdownToggle.textContent = lang.toUpperCase();
+
+      // Переключаємо відображення пунктів меню в залежності від обраної мови
+      if (lang === "en") {
+        document.querySelector(".dropdown-item.en").style.display = "none";
+        document.querySelector(".dropdown-item.ua").style.display = "block";
+      } else if (lang === "ua") {
+        document.querySelector(".dropdown-item.en").style.display = "block";
+        document.querySelector(".dropdown-item.ua").style.display = "none";
+      }
     });
-  }
+  });
 });

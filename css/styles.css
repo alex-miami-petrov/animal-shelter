@@ -630,16 +630,19 @@ iframe {
 /* MOB-MENU */
 
 .mob-menu {
-  /* position: absolute; */
-  /* position: fixed; */
-  right: 0;
-
+  width: 100%;
   height: 100%;
-
-  /* display: flex;
-
-  flex-direction: column; */
-  padding-bottom: 34px;
+  position: fixed;
+  display: flex;
+  top: 0;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 24px 24px 40px 16px;
+  overflow: auto;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .is-open {
@@ -655,6 +658,9 @@ iframe {
 }
 .logo-mob-menu {
   margin-right: 20px;
+}
+.logo-tab-menu {
+  display: none;
 }
 .help-btn-link {
 }
@@ -698,8 +704,8 @@ iframe {
 .language-menu {
   display: none;
   position: absolute;
-  top: 60px; /* або встановіть відстань, що підходить вам */
-  right: 0;
+  top: 60px;
+  right: 20%;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -722,6 +728,17 @@ iframe {
 
 .language-menu ul li a:hover {
   text-decoration: underline;
+}
+
+.mob-menu-lang-list {
+  display: none; /* Приховуємо меню мов за замовчуванням */
+  position: absolute; /* Абсолютне позиціонування для з'явлення над кнопкою */
+  top: 100%; /* Встановлюємо верхній край меню на відстані від нижнього краю кнопки */
+  left: 0;
+  z-index: 1000; /* Збільшуємо z-index, щоб меню було поверх інших елементів */
+  background-color: #fff; /* Колір фону меню */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь для меню */
+  padding: 10px; /* Відступи від країв меню */
 }
 
 /* TABLET */
@@ -1196,6 +1213,16 @@ iframe {
   .foot-link-wrap {
     display: flex;
     justify-content: center;
+  }
+  .logo-tab-menu {
+    display: unset;
+    margin-right: 95px;
+  }
+  .logo-mob-menu {
+    display: none;
+  }
+  .close-btn {
+    margin-left: 0px;
   }
 }
 

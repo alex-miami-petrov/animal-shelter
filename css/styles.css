@@ -1224,6 +1224,14 @@ iframe {
   .close-btn {
     margin-left: 0px;
   }
+  .language-menu {
+    top: 41px;
+    right: 31.5%;
+  }
+  .language-menu::after {
+    top: 41px;
+    right: 31.5%;
+  }
 }
 
 /* DESKTOP */
@@ -1497,5 +1505,8 @@ iframe {
   .foot-border {
     border-top: 1px solid #202053;
     width: 100%;
+  }
+  .language-menu {
+    right: 20.1%;
   }
 }

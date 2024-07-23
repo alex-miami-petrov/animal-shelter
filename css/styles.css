@@ -743,6 +743,13 @@ iframe {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь для меню */
   padding: 10px; /* Відступи від країв меню */
 }
+.lang-sel-mob {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  outline: none !important;
+  box-shadow: none !important;
+}
 
 /* TABLET */
 
@@ -1269,6 +1276,13 @@ iframe {
   .language-menu::after {
     top: 41px;
     right: 31.5%;
+  }
+  .mob-menu-header {
+    justify-content: center;
+  }
+  .mob-menu-list {
+    max-width: 624px;
+    margin: 0 auto;
   }
 }
 

@@ -772,6 +772,30 @@ iframe {
   box-shadow: none !important;
 }
 
+/* .card {
+  width: 300px; 
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-hidden {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-expanded {
+  display: block;
+}
+
+button {
+  margin-top: 10px;
+} */
+
 /* TABLET */
 
 @media screen and (min-width: 1024px) {

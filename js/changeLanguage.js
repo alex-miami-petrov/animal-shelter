@@ -78,13 +78,10 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
       const lang = this.getAttribute("data-lang");
 
-      // Отримуємо поточну мову з основної кнопки
       const currentLanguage = dropdownToggle.textContent.trim();
 
-      // Змінюємо текст основної кнопки на вибрану мову
       dropdownToggle.textContent = lang.toUpperCase();
 
-      // Переключаємо відображення пунктів меню в залежності від обраної мови
       if (lang === "en") {
         document.querySelector(".dropdown-item.en").style.display = "none";
         document.querySelector(".dropdown-item.ua").style.display = "block";
